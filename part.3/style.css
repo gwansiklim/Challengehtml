@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    widows: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: conter;
+    margin: 50px;
+  }
+  .main {
+    background-color: #6cbcbe;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    animation: rotate 1s infinite;
+    animation-delay: 0.3s;
+  }
+  .main-box__two {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-box__cicle {
+    background-color: white;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+  
+  }
+  .main-box__stick {
+    background-color: white;
+    width: 10px;
+    height: 40px;
+    margin: 3px;
+  }
+  @keyframes rotate
+  {
+    from{transform: rotate(0);
+    transform-origin : 50% 50%;}
+    to{transform: rotate(180deg);
+     transform-origin : 50% 50%;}
+  }
