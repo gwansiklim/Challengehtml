@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+      display: flex;
+  }
+main {
+    width: 100%;
+    height: 100vh;
+    border: 5px solid purple;
+    padding: 30px;
+}
