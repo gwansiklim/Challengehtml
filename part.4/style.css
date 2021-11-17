@@ -1,12 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+
 * {
     box-sizing: border-box;
   }
   body {
-      display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 main {
-    width: 100%;
+    width: 400px;
     height: 100vh;
     border: 5px solid purple;
     padding: 30px;
 }
+a {
+    color: black;
+}
+a:hover {
+    color: blueviolet;
+}
+.playlist {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.title { 
+    margin-left: 120px;
+    font-weight: 900px;
+}
+.playmusic {
+    margin-top: 40px;
+    display: flex;
+}
+.img {
+    background-image: url("https://s.wsj.net/public/resources/images/BN-CM879_justin_G_20140424034652.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.music {
+    display: block;
+    margin-left: 20px;
+    line-height: 30px;
+}
+.font__one{
+    font-size: 30px;
+}
+.font__two {
+    font-size: 20px;
+}
+.font__three {
+    font-size: 13px;
+}
+.click {
+    margin-top: 20px;
+}
+.play {
+    background-color: white;
+    border-radius: 10px;
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 3px 0px 0px black;
+}
+.heart, .plus {
+    background-color: white;
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 3px 0px 0px black;
+}
+.heart {
+    margin-left: 20px;
+}
+.plus {
+    margin-left: 14px;
+}
+.list {
+    display: flex;
+    margin-top: 40px;
+}
+.list__title {
+    line-height: 30px;
+    margin-left: 20px;
+}
+.playing {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 0 2px 0px 0px black;
+    background-color: white;
+    border-radius: 20px;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.list__img1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url("https://s.wsj.net/public/resources/images/BN-CM879_justin_G_20140424034652.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.list__img2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url("https://file2.nocutnews.co.kr/newsroom/image/2021/06/13/202106131759472028_0.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.list__img3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url("https://img.vogue.co.kr/vogue/2021/10/style_617668d772d73-930x930.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.list__img4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IU_in_%22Love_Poem%22_Concert_in_Seoul_on_23rd_November_2019.jpg/1200px-IU_in_%22Love_Poem%22_Concert_in_Seoul_on_23rd_November_2019.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
