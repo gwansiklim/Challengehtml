@@ -17,9 +17,6 @@ body {
     width: 400px;
     height: 820px;
 }
-.right {
-    margin-left: 50px;
-}
 
 .header {
     margin: 40px;
@@ -193,4 +190,78 @@ body {
 .fa-step-forward {
     margin-left: 20px;
     font-size: 20px;
+}
+.right {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.right__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right__img {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://img.discogs.com/dfNSJKhOcrrCgL34SXQzBtyFZfY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11276711-1605969705-3107.jpeg.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow : 0px 8px 30px 0px ;
+}
+.right__song {
+    margin-top: 50px;
+}
+.right__song h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.right__song p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.right__footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.playing input{
+    margin-left: 30px;
+    width: 330px;
+    height: 10px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    position: relative;
+}
+.play__music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    padding: 30px;
+}
+.icon__cicle {
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.fa-play {
+    margin-left: 5px;
 }
