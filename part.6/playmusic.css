@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
 * {
     box-sizing: border-box;
   }
@@ -9,13 +10,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.nav__pause a {
+    color: white;
 }
 .left, .right {
     border: 3px solid rgba(0, 0, 0, 0.1);
     border-radius: 30px;
-    margin-top: 20px;
-    width: 400px;
-    height: 820px;
+    width: 100%;
+    height: 800px;
 }
 
 .header {
@@ -90,15 +98,15 @@ body {
     margin-top: 10px;
 }
 .music__img-one{
-    background-image: url("https://image.bugsm.co.kr/album/images/500/9620/962065.jpg");
+    background-image: url("https://img.discogs.com/dfNSJKhOcrrCgL34SXQzBtyFZfY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11276711-1605969705-3107.jpeg.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
 }
 .music__img-two{
-    background-image: url("https://image.bugsm.co.kr/album/images/500/204073/20407398.jpg");
+    background-image: url("http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/955/260/81955260_1616133662756_1_600x600.JPG");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -106,7 +114,7 @@ body {
     height: 55px;
 }
 .music__img-three {
-    background-image: url("https://i1.sndcdn.com/artworks-000604893598-0k7eqv-t500x500.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0052/7450/1190/products/image_b8faa335-85b6-4c2f-99fd-c8c8a380f976_1024x1024.jpg?v=1623158840");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -114,7 +122,7 @@ body {
     height: 55px;
 }
 .music__img-four {
-    background-image: url("https://blog.kakaocdn.net/dn/7RBaQ/btqWXaZ6dV6/7gYhWYT2n5KwIqfVF6iaIK/img.jpg");
+    background-image: url("https://bimage.interpark.com/goods_image/7/5/6/8/353697568g.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -122,7 +130,7 @@ body {
     height: 55px;
 }
 .music__img-five {
-    background-image: url("https://image.bugsm.co.kr/album/images/500/151758/15175845.jpg");
+    background-image: url("https://townsquare.media/site/366/files/2021/08/attachment-Maneskin-Iggy-Pop-I-Wanna-Be-Your-Slave.jpg?w=720&q=75");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -138,14 +146,14 @@ body {
     font-size: 15px;
 }
 .music__title {
-    margin-right: 170px;
+    margin-right: 220px;
 }
 .music__title-one, .music__title-two,
 .music__title-three{
-    margin-right: 140px;
+    margin-right: 190px;
 }
 .music__title-four {
-    margin-right: 30px;
+    margin-right: 90px;
 }
 .icons {
     margin-right: 40px;
@@ -157,14 +165,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .music__sing {
     background-color: black;
     opacity: 0.8;
     border-radius: 30px;
     color: white;
-    width: 370px;
+    width: 440px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -192,7 +200,6 @@ body {
     font-size: 20px;
 }
 .right {
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -235,13 +242,28 @@ body {
     padding: 10px 30px;
     color: rgba(0, 0, 0, 0.2);
 }
-.playing input{
+.playing {
     margin-left: 30px;
-    width: 330px;
+    width: 430px;
     height: 10px;
     background-color: #eeeeee;
     border-radius: 20px;
     position: relative;
+}
+.range {
+    background-color: black;
+    border-radius: 20px;
+    width: 250px;
+    height: 10px;
+}
+.cicle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 30px;
+    margin-left: 240px;
+    margin-top: -15px;
 }
 .play__music {
     display: flex;
@@ -264,4 +286,24 @@ body {
 }
 .fa-play {
     margin-left: 5px;
+}
+.fa-random, .fa-sync-alt{
+    opacity: 0.3;
+}
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: purple;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+@media screen and (max-width: 600px){
+    #no-mobile {
+        display: none;
+    }
 }
